@@ -9,6 +9,7 @@ function Layout({ children }) {
   return (
     <>
     <Topbar />
+    <hr className="border-t-[0.1px] border-[#1b1f23]" />
     <div className='flex h-[calc(100vh-56px)]'>
       <Sidebar />
       <Explorer />
@@ -19,6 +20,7 @@ function Layout({ children }) {
         </main>
       </div>
     </div>
+    <hr className="border-t-[0.1px] border-[#1b1f23]" />
     <Bottombar />
     </>
   )

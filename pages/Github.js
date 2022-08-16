@@ -1,8 +1,13 @@
 import React from 'react'
 
+
 function Github() {
+
+
+
+
   return (
-    <div>Github</div>
+    <div className='bg-[#24292e]'>Github</div>
   )
 }
 

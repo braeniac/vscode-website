@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
+    <div className='bg-[#24292e]'>
 
       About
     </div>

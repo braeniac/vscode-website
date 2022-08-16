@@ -1,15 +1,20 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 
 function Menu() {
 
+  const router = useRouter(); 
+
   return (
     <div className='flex-col pt-2'>
       
-      <Link href="/">
-      <button className='flex px-3 space-x-2 items-center mb-2'>
+      <button 
+        className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
+        onClick={() => router.push('/')}
+      >
         <Image
           src="/react.svg"
           height={18}
@@ -17,10 +22,11 @@ function Menu() {
         />
         <p>home.jsx</p>
       </button>
-      </Link>
       
-      <Link href="/About">
-      <button className='flex px-3 space-x-2 items-center mb-2'>
+      <button 
+        className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
+        onClick={() => router.push('/About')}
+      >  
         <Image
           src="/html_icon.svg"
           height={18}
@@ -28,10 +34,11 @@ function Menu() {
         />
         <p>about.html</p>
       </button>
-      </Link>
 
-      <Link href="/Contact">
-      <button className='flex px-3 space-x-2 items-center mb-2'>
+      <button 
+        className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
+        onClick={() => router.push('/Contact')}  
+      >
         <Image
           src="/css_icon.svg"
           height={18}
@@ -39,10 +46,11 @@ function Menu() {
         />
         <p>contact.css</p>
       </button>
-      </Link>
 
-      <Link href="/Projects">
-      <button className='flex px-3 space-x-2 items-center mb-2'>
+      <button 
+        className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
+        onClick={() => router.push('/Projects')}  
+      >
         <Image
           src="/js_icon.svg"
           height={18}
@@ -50,10 +58,11 @@ function Menu() {
         />
         <p>projects.js</p>
       </button>
-      </Link>
 
-      <Link href="/Videos">
-      <button className='flex px-3 space-x-2 items-center mb-2'>
+      <button 
+        className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
+        onClick={() => router.push('/Videos')}  
+      >
         <Image
           src="/json_icon.svg"
           height={18}
@@ -61,10 +70,11 @@ function Menu() {
         />
         <p>videos.json</p>
       </button>
-      </Link>
-
-      <Link href="/Github">
-      <button className='flex px-3 space-x-2 items-center mb-2'>
+ 
+      <button 
+        className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
+        onClick={() => router.push('/Github')}  
+      >
         <Image
           src="/markdown_icon.svg"
           height={18}
@@ -72,11 +82,9 @@ function Menu() {
         />
         <p>github.md</p>
       </button>
-      </Link>
-
-
+      
     </div>
   )
 }
 
-export default Menu
+export default Menu; 

@@ -2,18 +2,19 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-[#24292e]'>
       
 
-      <main>
+
+        home
 
 
-        Home
+       
   
 
          
       
-      </main>
+   
     </div>
   )
 }

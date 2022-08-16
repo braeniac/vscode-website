@@ -10,7 +10,7 @@ function Explorer() {
   const [rotation, setRotation] = useState(''); 
 
   return (
-    <div className='bg-[#1f2428] w-56 text-white text-sm hidden md:inline'>
+    <div className='bg-[#1f2428] w-56 text-white text-sm hidden md:inline border-r-[0.1px] border-[#1b1f23]'>
 
       <div className='pl-2 pt-2 mt-4'>
         <p>EXPLORER</p>
@@ -34,7 +34,7 @@ function Explorer() {
 
       { 
         toggle ? 
-        <div className=''>
+        <div>
           <Menu />
         </div> : null
       } 
