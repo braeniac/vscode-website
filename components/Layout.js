@@ -13,9 +13,9 @@ function Layout({ children }) {
     <div className='flex h-[calc(100vh-56px)]'>
       <Sidebar />
       <Explorer />
-      <div className='w-full'>
+      <div className='flex-1'>
         <Taskbar />
-        <main>
+        <main className=''>
           { children }
         </main>
       </div>
