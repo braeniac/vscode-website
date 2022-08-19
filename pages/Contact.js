@@ -5,20 +5,16 @@ import Form from '../components/Form';
 
 function Contact() {
   return (
-    <div className='bg-[#24292e] h-[calc(100vh-(95px))] border-b-[0.1px] border-[#1b1f23] flex'>
+    <div className='bg-[#24292e] h-[calc(100vh-(95px))] border-b-[0.1px] border-[#1b1f23] sm:flex'>
 
-      <div className='flex'>
+      <div>
         <Socials />
       </div>
 
-      {/* <div className='flex'>
+      <div>
         <Form />
-      </div> */}
-
-
-
-
-
+      </div>
+      
     </div>
   )
 }
