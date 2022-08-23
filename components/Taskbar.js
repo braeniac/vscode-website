@@ -9,7 +9,7 @@ function Taskbar() {
   const router = useRouter(); 
 
   return (
-    <div className='flex w-full bg-[#1f2428] items-center h-10 sm:h-10 text-white text-sm overflow-auto'>
+    <div className='flex w-full bg-[#1f2428] items-center h-10 sm:h-10 text-white text-sm overflow-auto border-b-[0.1px] border-[#1b1f23] '>
       
       <button 
         className='flex space-x-2 items-center hover:bg-[#24292e] h-full px-2 focus:border-t-2 focus:border-[#f9826c] focus:bg-[#24292e]' 

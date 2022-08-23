@@ -10,7 +10,7 @@ function Layout({ children }) {
     <>
     <Topbar />
     <hr className="border-t-[0.1px] border-[#1b1f23]" />
-    <div className='flex h-[calc(100vh-56px)]'>
+    <div className='flex sm:h-[calc(100vh-56px)]'>
       <Sidebar />
       <Explorer />
       <div className='flex-1'>
