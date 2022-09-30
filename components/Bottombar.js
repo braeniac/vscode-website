@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Bottombar() {
   return (
-    <div className='flex bg-[#1f2428] justify-between'>
+    <div className='flex bg-[#1f2428] justify-between w-full'>
      
       <div className='flex h-6 text-white text-xs md:text-sm px-5'>
         <button className='flex hover:bg-zinc-700  space-x-2 h-full items-center'>
@@ -38,7 +38,7 @@ function Bottombar() {
 
     <div className='flex text-white pr-2 text-xs md:text-sm space-x-3 mr-2'>
       
-      <button className='flex space-x-2 h-full items-center hover:bg-zinc-700'>
+      <button className='hidden sm:flex space-x-2 h-full items-center hover:bg-zinc-700'>
         <div className='flex space-x-1'>
           <Image
             src="/nextjs.svg"

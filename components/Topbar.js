@@ -3,16 +3,15 @@ import Image from 'next/image'
 
 function Topbar() {
   return (
-    <div className='flex bg-[#24292e] h-8 text-white text-sm justify-between content-center items-center'>
+    <div className='flex bg-[#24292e] w-full h-10 items-center justify-between text-white text-sm'>
 
-      <div className='flex flex-row ml-3'>
+      <div className='flex pl-3'>
         <Image
           src="/vscode_icon.svg"
           height={15}
           width={15}
         />
-        
-        <div className='flex-row space-x-3 pl-3 hidden md:flex'>
+        <div className='space-x-3 pl-3 hidden sm:flex'>
           <p>File</p>
           <p>Edit</p>
           <p>View</p>
@@ -21,14 +20,13 @@ function Topbar() {
           <p>Terminal</p>
           <p>Help</p>
         </div>
-        
       </div>
 
       <div>
-        <p>Maninder Singh - Visual Studio Code</p>
+        <p>Maninder Singh - Visual Studio Code </p>
       </div>
 
-      <div className='flex flex-row space-x-2 pr-3'>
+      <div className='flex pr-3 space-x-1'>
         <div className='bg-[#f1fa8c] w-3 h-3 rounded-full'></div>
         <div className='bg-[#50fa7b] w-3 h-3 rounded-full'></div>
         <div className='bg-[#ff5555] w-3 h-3 rounded-full'></div>
