@@ -3,10 +3,9 @@ import Image from 'next/image';
 
 function Bottombar() {
   return (
-    <div className='flex bg-[#4e2a8e] justify-between w-full'>
-     
+    <div className='flex bg-[#0078d7] justify-between w-full'> 
       <div className='flex h-8 text-white text-xs md:text-sm px-5'>
-        <button className='flex hover:bg-zinc-700  space-x-2 h-full items-center'>
+        <button className='flex space-x-2 h-full items-center'>
           <Image
             src="/merge.svg"
             height={16}
@@ -14,8 +13,7 @@ function Bottombar() {
           />
           <p>master*</p>
         </button>
-
-        <button className='flex space-x-2 h-full items-center hover:bg-zinc-700 mx-3'>
+        <button className='flex space-x-2 h-full items-center mx-3'>
           <div className='flex space-x-1'>
             <Image
               src="/x-circle.svg"
@@ -35,10 +33,8 @@ function Bottombar() {
           </div>
         </button>
     </div>
-
-    <div className='flex text-white pr-2 text-xs md:text-sm space-x-3 mr-2'>
-      
-      <button className='hidden sm:flex space-x-2 h-full items-center hover:bg-zinc-700'>
+    <div className='flex text-white pr-2 text-xs md:text-sm space-x-3 mr-2'>  
+      <button className='hidden sm:flex space-x-2 h-full items-center '>
         <div className='flex space-x-1'>
           <Image
             src="/nextjs.svg"
@@ -48,8 +44,7 @@ function Bottombar() {
         </div>
         <p>Powered by Next.js</p>
       </button>
- 
-      <button className='flex space-x-2 h-full items-center hover:bg-zinc-700'>
+      <button className='flex space-x-2 h-full items-center'>
         <div className='flex space-x-1'>
           <Image
             src="/double-check.svg"
@@ -59,8 +54,7 @@ function Bottombar() {
         </div>
         <p>Prettier</p>
       </button>
-
-      <button className='flex space-x-2 h-full items-center hover:bg-zinc-700'>
+      <button className='flex space-x-2 h-full items-center'>
         <div className='flex space-x-1'>
           <Image
             src="/bell.svg"
@@ -70,7 +64,6 @@ function Bottombar() {
         </div>
       </button>
     </div>
-
   </div>
   )
 }

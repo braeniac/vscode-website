@@ -1,16 +1,31 @@
 import React from 'react'; 
 import { useRouter } from 'next/router'; 
 import { motion } from "framer-motion"; 
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
 
 export default function Home() {
 
   const router = useRouter(); 
+  const [text, count] = useTypewriter({
+    words: [
+      "Full-Stack Developer", 
+      "Guy-Who-Loves-Coffee.tsx", 
+      "<ButLovesToCodeMode />"
+    ],
+    loop: true,
+    delaySpeed: 2000
+  }); 
 
   return (
     <div className='flex bg-[#24292e] h-screen overflow-y-auto text-white'> 
       <div className='flex-col  self-center mt-[-150px] text-justify md:text-left pl-10'>
         <h1 className='text-6xl pb-3'>Maninder Singh</h1>
-        <p className='text-2xl md:text-3xl'>Full Stack Developer</p>
+
+        <h1>
+          <span className='text-2xl md:text-3xl'>{text}</span>
+          <Cursor cursorColor='#f9826c'/>
+        </h1>
+
         <div className='pt-5 space-x-4 font-bold'>
           <motion.button 
             className='bg-[#f9826c] border-2 py-1 px-2 border-[#f9826c]'
