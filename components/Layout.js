@@ -17,7 +17,7 @@ function Layout({ children }) {
         <Explorer />
         <div className='flex-col w-full'>
           <Taskbar />
-          <div className=''>
+          <div className='font-mono'>
             {children}
           </div>
         </div>

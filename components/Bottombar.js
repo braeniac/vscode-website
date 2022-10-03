@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 function Bottombar() {
   return (
-    <div className='flex bg-[#1f2428] justify-between w-full'>
+    <div className='flex bg-[#4e2a8e] justify-between w-full'>
      
-      <div className='flex h-6 text-white text-xs md:text-sm px-5'>
+      <div className='flex h-8 text-white text-xs md:text-sm px-5'>
         <button className='flex hover:bg-zinc-700  space-x-2 h-full items-center'>
           <Image
             src="/merge.svg"
