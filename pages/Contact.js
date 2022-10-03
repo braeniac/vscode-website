@@ -5,9 +5,8 @@ import Form from '../components/Form';
 
 function Contact() {
   return (
-    <div className='bg-yellow-200'>
-
-      
+    <div className='bg-[#24292e] h-screen overflow-y-auto text-white'> 
+      contacts
     </div>
   )
 }

@@ -8,21 +8,21 @@ import Taskbar from './Taskbar';
 function Layout({ children }) {
   return (
     <div className='flex flex-col h-screen w-screen'>
-      <div className='sticky top-0'>
+      <div>
         <Topbar />
         <hr className="border-t-[0.1px] border-[#1b1f23]" />
       </div>
-      <div className='flex flex-1 w-full'>
+      <div className='flex flex-1 w-full overflow-hidden'>
         <Sidebar />
         <Explorer />
         <div className='flex-col w-full'>
           <Taskbar />
-          <div>
+          <div className=''>
             {children}
           </div>
         </div>
       </div>
-      <div className='flex sticky'>
+      <div className='flex'>
         <hr className="border-t-[0.1px] border-[#1b1f23]" />
         <Bottombar />
       </div>
