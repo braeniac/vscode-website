@@ -14,13 +14,13 @@ export default function Home() {
       "Guy-Who-Loves-Coffee.tsx", 
       "<ButLovesToCodeMore />"
     ],
-    loop: 3,
+    loop: true,
     delaySpeed: 2000,
   }); 
-
+  
   return (
     <div className='flex bg-[#24292e] h-screen overflow-hidden text-white pt-10'> 
-      <div className='flex-col  self-center mt-[-150px] text-justify md:text-left pl-10'>
+      <div className='flex-col self-center mt-[-150px] text-justify md:text-left pl-10'>
         <BackgroundCircles />
         <h1 className='text-6xl pb-3'>Maninder Singh</h1>
         <h1>
