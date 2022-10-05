@@ -16,7 +16,7 @@ function Repo({ title, desc, stack, source }) {
             {
                 stack.map((item) => {
                     return(
-                        <div className='inline-block mx-1 mb-5'>   
+                        <div className='inline-block mx-1 mb-5' key={item} >   
                             <Chip language={item} />
                         </div>
                     )
