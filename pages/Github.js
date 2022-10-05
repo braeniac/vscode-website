@@ -1,5 +1,6 @@
 import React from 'react'
-import Repo from '../components/Repo'
+
+import Repo from '../components/Repo'; 
 
 function Github() {
 

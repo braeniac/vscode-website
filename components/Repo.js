@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { motion } from "framer-motion"; 
 
 import Chip from '../components/Chip'; 
-import Image from '../components/Image'; 
 
 function Repo({ title, desc, stack, source }) {
 
