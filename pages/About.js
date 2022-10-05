@@ -33,7 +33,7 @@ function About() {
           drove me to Brock University, where I majored in Computer Science. I am constantly 
           learning new programming tools (Python, SQL, React, C++, JavaScript), algorithms 
           and higher mathematics to connect the dots. I’ve been professionally coding 
-          for over a year now as a Full-Stack developer. Currently,
+          for over a year now as a Full-Stack developer.
         </p>
       </div>
     </div>

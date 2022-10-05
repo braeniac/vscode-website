@@ -4,12 +4,10 @@ import { motion } from "framer-motion";
 import Chip from '../components/Chip'; 
 import Image from '../components/Image'; 
 
-function Repo({ image, title, desc, stack, source }) {
+function Repo({ title, desc, stack, source }) {
 
     return (  
         <div className='bg-[#1b1f23] rounded-lg ml-5 mb-5 w-80 md:w-96 h-49 pt-5 px-2 hover:drop-shadow-lg'>
-        
-        <Image name={image} />
         
         <div className='px-5 space-y-2 mb-5 mt-2'>
             <h1 className='text-2xl font-bold'>{title}</h1>

@@ -6,16 +6,15 @@ function Chip({ language }) {
     const [color, setColor] = useState(null);
 
     const colors = [
-        'border-orange-700',
-        'border-blue-700',
-        'border-green-700',
-        'border-red-700',
-        'border-yellow-700',
-        'border-pink-700',
-        'border-lime-700',
+        'border-orange-300',
+        'border-blue-300',
+        'border-green-300',
+        'border-red-300',
+        'border-yellow-300',
+        'border-pink-300',
+        'border-lime-300',
     ];
-    console.log(color)
-
+    
     useEffect(() => {
         setColor(shuffle(colors).pop());
     }, []);

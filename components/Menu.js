@@ -9,7 +9,7 @@ function Menu() {
   const router = useRouter(); 
 
   return (
-    <div className='flex-col pt-2 space-y-2'>
+    <div className='flex-col pt-2'>
       <button 
         className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
         onClick={() => router.push('/')}
