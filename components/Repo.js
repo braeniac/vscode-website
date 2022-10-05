@@ -2,15 +2,16 @@ import React, { useEffect } from 'react';
 import { motion } from "framer-motion"; 
 
 import Chip from '../components/Chip'; 
+import Image from '../components/Image'; 
 
-function Repo({ imageURL, title, desc, stack, source }) {
+function Repo({ image, title, desc, stack, source }) {
 
     return (  
-        <div className='bg-[#1b1f23] rounded-lg ml-5 mb-5 w-80 md:w-96 h-49 pt-5 px-2 hover:drop-shadow-lg border'>
+        <div className='bg-[#1b1f23] rounded-lg ml-5 mb-5 w-80 md:w-96 h-49 pt-5 px-2 hover:drop-shadow-lg'>
         
-        {/* image */}
+        <Image name={image} />
         
-        <div className='px-5 space-y-2 mb-5'>
+        <div className='px-5 space-y-2 mb-5 mt-2'>
             <h1 className='text-2xl font-bold'>{title}</h1>
             <p>{desc}</p>
         </div>
@@ -30,7 +31,7 @@ function Repo({ imageURL, title, desc, stack, source }) {
                 whileHover={{ scale: 1.2 }}
                 onHoverStart={e => {}}
                 onHoverEnd={e => {}}
-                className='border-2 px-4 py-2 border-[#f9826c] ml-5 rounded-3xl'
+                className='border-2 px-4 py-2 border-[#f9826c] ml-5'
                 onClick={() => window.open(`${source}`)}
             >
                 <p className='text-sm'>Source Code</p>
