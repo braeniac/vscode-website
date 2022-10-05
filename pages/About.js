@@ -15,7 +15,7 @@ function About() {
 
   return (
     <div className='bg-[#24292e] h-screen flex-col overflow-y-auto text-white px-10 pt-8 snap-y snap-proximity overscroll-y-contain'> 
-      <h1 className='md:hidden text-center md:text-start mb-20'>A B O U T</h1>
+      <h1 className='md:hidden text-center md:text-start mb-20'></h1>
       <div className='text-center md:text-start'> 
         <h1 className='font-bold text-xl md:text-2xl pb-3 -mt-16 md:m-0'>A Little Bit About Me</h1>
         <div 
@@ -23,7 +23,7 @@ function About() {
         >
           <img 
             src={imageURL}
-            className='rounded-full border-2 m-auto md:m-0 w-44 h-44'
+            className='rounded-full border-2 m-auto md:m-0 w-32 h-32'
           />
         </div>
         <p className='text-sm md:text-lg mb-36'>

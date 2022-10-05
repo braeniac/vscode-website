@@ -10,11 +10,11 @@ export default function Home() {
   const router = useRouter(); 
   const [text, ] = useTypewriter({
     words: [
-      "Full-Stack Developer", 
       "Guy-Who-Loves-Coffee.tsx", 
-      "<ButLovesToCodeMore />"
+      "<ButLovesToCodeMore />",
+      "Full-Stack Developer"
     ],
-    loop: true,
+    loop: 3,
     delaySpeed: 2000,
   }); 
   
@@ -22,7 +22,7 @@ export default function Home() {
     <div className='flex bg-[#24292e] h-screen overflow-hidden text-white pt-10'> 
       <div className='flex-col self-center mt-[-150px] text-justify md:text-left pl-10'>
         <BackgroundCircles />
-        <h1 className='text-6xl pb-3'>Maninder Singh</h1>
+        <h1 className='text-5xl md:text-7xl pb-3'>Maninder Singh</h1>
         <h1>
           <span className='text-xl md:text-2xl'>{text}</span>
           <Cursor cursorColor='#f9826c' cursorStyle='_' />
@@ -30,7 +30,7 @@ export default function Home() {
         <div className='pt-5 space-x-4 font-bold'>
           <motion.button 
             className='bg-[#f9826c] border-2 py-1 px-2 border-[#f9826c] relative'
-            onClick={() => router.push('/Projects')}
+            onClick={() => router.push('/Github')}
             whileHover={{ scale: 1.2 }}
             onHoverStart={e => {}}
             onHoverEnd={e => {}}

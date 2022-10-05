@@ -9,8 +9,7 @@ function Menu() {
   const router = useRouter(); 
 
   return (
-    <div className='flex-col pt-2'>
-      
+    <div className='flex-col pt-2 space-y-2'>
       <button 
         className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
         onClick={() => router.push('/')}
@@ -47,7 +46,7 @@ function Menu() {
         <p>contact.css</p>
       </button>
 
-      <button 
+      {/* <button 
         className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
         onClick={() => router.push('/Projects')}  
       >
@@ -57,6 +56,18 @@ function Menu() {
           width={18}
         />
         <p>projects.js</p>
+      </button> */}
+
+      <button 
+        className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
+        onClick={() => router.push('/Github')}  
+      >
+        <Image
+          src="/markdown_icon.svg"
+          height={18}
+          width={18}
+        />
+        <p>github.md</p>
       </button>
 
       <button 
@@ -70,19 +81,7 @@ function Menu() {
         />
         <p>videos.json</p>
       </button>
- 
-      <button 
-        className='flex px-3 space-x-2 items-center hover:bg-[#24292e] p-1 w-full'
-        onClick={() => router.push('/Github')}  
-      >
-        <Image
-          src="/markdown_icon.svg"
-          height={18}
-          width={18}
-        />
-        <p>github.md</p>
-      </button>
-      
+
     </div>
   )
 }

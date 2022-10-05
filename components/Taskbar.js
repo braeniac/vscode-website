@@ -48,7 +48,7 @@ function Taskbar() {
           <p>contact.css</p>
         </button>
 
-        <button 
+        {/* <button 
           className='flex space-x-2 items-center hover:bg-[#24292e] h-full px-2 focus:border-t-2 focus:border-[#f9826c] focus:bg-[#24292e]' 
           onClick={() => router.push('/Projects')}
         > 
@@ -58,6 +58,18 @@ function Taskbar() {
             width={16}
           />
           <p>projects.js</p>
+        </button> */}
+
+        <button 
+          className='flex space-x-2 items-center hover:bg-[#24292e] h-full px-2 focus:border-t-2 focus:border-[#f9826c] focus:bg-[#24292e]' 
+          onClick={() => router.push('/Github')}
+        > 
+          <Image
+            src="/markdown_icon.svg"
+            height={18}
+            width={18}
+          />
+          <p>github.md</p>
         </button>
 
         <button 
@@ -70,18 +82,6 @@ function Taskbar() {
             width={18}
           />
           <p>videos.json</p>
-        </button>
-
-        <button 
-          className='flex space-x-2 items-center hover:bg-[#24292e] h-full px-2 focus:border-t-2 focus:border-[#f9826c] focus:bg-[#24292e]' 
-          onClick={() => router.push('/Github')}
-        > 
-          <Image
-            src="/markdown_icon.svg"
-            height={18}
-            width={18}
-          />
-          <p>github.md</p>
         </button>
       </div> 
 
