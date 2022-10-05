@@ -13,24 +13,26 @@ function Github() {
         <Repo 
           title="VSCode Portfolio"
           desc="Developer-centric portfolio based on the VSCode"
-          stack={["Next.js", "react", "firebase", "Tailwind CSS", "Framer Motion"]}
-          live={true}
+          stack={["Next.js", "react", "firebase", "Tailwind CSS", "Lodash", "Framer Motion"]}
+          source="https://github.com/braeniac/vscode-website"
         />
         <Repo 
           title="Spotify Clone"
           desc="Developed a Spotify clone that remotely plays music once a user is logged into an existing Spotify account"
-          stack={["Next.js", "Next Auth", "React", "Recoil.js", "Tailwind CSS", "Lodash"]}
-          live={true}
+          stack={["Next.js", "Next-Auth", "React", "Recoil.js", "Tailwind CSS", "Lodash"]}
+          source="https://github.com/braeniac/spotify-clone"
         />
         <Repo 
           title="Plagiarism Detection System"
           desc="Developed a code (limited to C, C++, and Java) plagiarism detection system using cosine similarity"
-          stack={["Java", "PHP", "HTML", "CSS"]}
+          stack={["Java", "PHP"]}
+          source="https://github.com/braeniac/plagiarism-detection-system"
         />
          <Repo 
           title="Connect Four"
           desc="Terminal based Connect Four with AI opponent (on seperate thread using p-threads)"
           stack={["C++"]}
+          source="https://github.com/braeniac/connect4"
         />
       </div>
      
